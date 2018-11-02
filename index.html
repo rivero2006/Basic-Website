@@ -16,12 +16,15 @@ canvas {
 var myGamePiece;
 var myObstacles = [];
 var myScore;
+var myMusic;
 
 function startGame() {
     myGamePiece = new component(30, 30, "yellow", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
+    myMusic = new sound("https://soundimage.org/wp-content/uploads/2018/10/Our-Mountain_v003_Looping.mp3");
+    myMusic.play
 }
     
 function restartBtn() {
@@ -141,5 +144,6 @@ function accelerate(n) {
 <button onclick="restartBtn();">Restart</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <p>How long can you stay alive?</p>
+    <audio>
 </body>
 </html>
